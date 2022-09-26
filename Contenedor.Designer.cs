@@ -106,6 +106,7 @@
             this.btnCombo.TabIndex = 2;
             this.btnCombo.Text = "06. ComboBox";
             this.btnCombo.UseVisualStyleBackColor = true;
+            this.btnCombo.Click += new System.EventHandler(this.btnCombo_Click);
             // 
             // btnCajas
             // 

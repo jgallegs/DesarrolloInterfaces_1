@@ -108,5 +108,31 @@ namespace DesarrolloInterfacesFormularios
                 f.Show();
             }
         }
+
+        private void btnCombo_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Length > 0)
+            {
+                if (this.MdiChildren[0].Name != "ComboBox")
+                {
+                    DialogResult rs = MessageBox.Show("Desea cerrar el formulario abierto?", "Atención!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (rs == DialogResult.Yes)
+                    {
+                        this.MdiChildren[0].Close();
+                        ComboBox f = new ComboBox();
+                        f.MdiParent = this;
+                        f.Dock = DockStyle.Fill;
+                        f.Show();
+                    }
+                }
+            }
+            else
+            {
+                ComboBox f = new ComboBox();
+                f.MdiParent = this;
+                f.Dock = DockStyle.Fill;
+                f.Show();
+            }
+        }
     }
 }
