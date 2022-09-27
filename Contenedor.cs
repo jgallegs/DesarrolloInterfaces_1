@@ -134,5 +134,31 @@ namespace DesarrolloInterfacesFormularios
                 f.Show();
             }
         }
+
+        private void btnCalendarios_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Length > 0)
+            {
+                if (this.MdiChildren[0].Name != "Calendarios")
+                {
+                    DialogResult rs = MessageBox.Show("Desea cerrar el formulario abierto?", "Atención!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (rs == DialogResult.Yes)
+                    {
+                        this.MdiChildren[0].Close();
+                        Calendarios f = new Calendarios();
+                        f.MdiParent = this;
+                        f.Dock = DockStyle.Fill;
+                        f.Show();
+                    }
+                }
+            }
+            else
+            {
+                Calendarios f = new Calendarios();
+                f.MdiParent = this;
+                f.Dock = DockStyle.Fill;
+                f.Show();
+            }
+        }
     }
 }

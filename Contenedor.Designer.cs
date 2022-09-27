@@ -97,6 +97,7 @@
             this.btnCalendarios.TabIndex = 2;
             this.btnCalendarios.Text = "07. Calendarios";
             this.btnCalendarios.UseVisualStyleBackColor = true;
+            this.btnCalendarios.Click += new System.EventHandler(this.btnCalendarios_Click);
             // 
             // btnCombo
             // 
