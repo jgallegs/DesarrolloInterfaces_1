@@ -38,7 +38,7 @@
             this.btnListas = new System.Windows.Forms.Button();
             this.btnColores = new System.Windows.Forms.Button();
             this.btnTriangulos = new System.Windows.Forms.Button();
-            this.btnPrueba = new System.Windows.Forms.Button();
+            this.btnTextBox = new System.Windows.Forms.Button();
             this.panelIzq.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +53,7 @@
             this.panelIzq.Controls.Add(this.btnListas);
             this.panelIzq.Controls.Add(this.btnColores);
             this.panelIzq.Controls.Add(this.btnTriangulos);
-            this.panelIzq.Controls.Add(this.btnPrueba);
+            this.panelIzq.Controls.Add(this.btnTextBox);
             this.panelIzq.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelIzq.Location = new System.Drawing.Point(0, 0);
             this.panelIzq.Name = "panelIzq";
@@ -77,7 +77,7 @@
             this.btnGamaCol.TabIndex = 2;
             this.btnGamaCol.Text = "09. Gama Colores";
             this.btnGamaCol.UseVisualStyleBackColor = true;
-            this.btnGamaCol.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnGamaCol.Click += new System.EventHandler(this.btnGamaCol_Click);
             // 
             // btnTemporizador
             // 
@@ -87,7 +87,7 @@
             this.btnTemporizador.TabIndex = 2;
             this.btnTemporizador.Text = "08. Temporizador";
             this.btnTemporizador.UseVisualStyleBackColor = true;
-            this.btnTemporizador.Click += new System.EventHandler(this.button1_Click);
+            this.btnTemporizador.Click += new System.EventHandler(this.btnTemporizador_Click);
             // 
             // btnCalendarios
             // 
@@ -147,15 +147,15 @@
             this.btnTriangulos.UseVisualStyleBackColor = true;
             this.btnTriangulos.Click += new System.EventHandler(this.btnTriangulos_Click);
             // 
-            // btnPrueba
+            // btnTextBox
             // 
-            this.btnPrueba.Location = new System.Drawing.Point(12, 12);
-            this.btnPrueba.Name = "btnPrueba";
-            this.btnPrueba.Size = new System.Drawing.Size(176, 43);
-            this.btnPrueba.TabIndex = 0;
-            this.btnPrueba.Text = "01. TextBox";
-            this.btnPrueba.UseVisualStyleBackColor = true;
-            this.btnPrueba.Click += new System.EventHandler(this.btnPrueba_Click);
+            this.btnTextBox.Location = new System.Drawing.Point(12, 12);
+            this.btnTextBox.Name = "btnTextBox";
+            this.btnTextBox.Size = new System.Drawing.Size(176, 43);
+            this.btnTextBox.TabIndex = 0;
+            this.btnTextBox.Text = "01. TextBox";
+            this.btnTextBox.UseVisualStyleBackColor = true;
+            this.btnTextBox.Click += new System.EventHandler(this.btnTextBox_Click);
             // 
             // Contenedor
             // 
@@ -175,7 +175,7 @@
         #endregion
 
         private Panel panelIzq;
-        private Button btnPrueba;
+        private Button btnTextBox;
         private Button btnTemporizador;
         private Button btnCalendarios;
         private Button btnCombo;

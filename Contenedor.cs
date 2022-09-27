@@ -17,41 +17,6 @@ namespace DesarrolloInterfacesFormularios
             InitializeComponent();
         }
 
-        private void btnPrueba_Click(object sender, EventArgs e)
-        {
-            if (this.MdiChildren.Length > 0)
-            {
-                if (this.MdiChildren[0].Name != "frmTextBox")
-                {
-                    DialogResult rs = MessageBox.Show("Desea cerrar el formulario abierto?", "Atención!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (rs == DialogResult.Yes)
-                    {
-                        this.MdiChildren[0].Close();
-                        Form2 f = new Form2();
-                        f.MdiParent = this;
-                        f.Dock = DockStyle.Fill;
-                        f.Show();
-                    }
-                }
-            } else
-            {
-                Form2 f = new Form2();
-                f.MdiParent = this;
-                f.Dock = DockStyle.Fill;
-                f.Show();
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void Contenedor_Load(object sender, EventArgs e)
         {
 
@@ -155,6 +120,84 @@ namespace DesarrolloInterfacesFormularios
             else
             {
                 Calendarios f = new Calendarios();
+                f.MdiParent = this;
+                f.Dock = DockStyle.Fill;
+                f.Show();
+            }
+        }
+
+        private void btnTemporizador_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Length > 0)
+            {
+                if (this.MdiChildren[0].Name != "Temporizador")
+                {
+                    DialogResult rs = MessageBox.Show("Desea cerrar el formulario abierto?", "Atención!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (rs == DialogResult.Yes)
+                    {
+                        this.MdiChildren[0].Close();
+                        Temporizador f = new Temporizador();
+                        f.MdiParent = this;
+                        f.Dock = DockStyle.Fill;
+                        f.Show();
+                    }
+                }
+            }
+            else
+            {
+                Temporizador f = new Temporizador();
+                f.MdiParent = this;
+                f.Dock = DockStyle.Fill;
+                f.Show();
+            }
+        }
+
+        private void btnGamaCol_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Length > 0)
+            {
+                if (this.MdiChildren[0].Name != "GamaColores")
+                {
+                    DialogResult rs = MessageBox.Show("Desea cerrar el formulario abierto?", "Atención!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (rs == DialogResult.Yes)
+                    {
+                        this.MdiChildren[0].Close();
+                        GamaColores f = new GamaColores();
+                        f.MdiParent = this;
+                        f.Dock = DockStyle.Fill;
+                        f.Show();
+                    }
+                }
+            }
+            else
+            {
+                GamaColores f = new GamaColores();
+                f.MdiParent = this;
+                f.Dock = DockStyle.Fill;
+                f.Show();
+            }
+        }
+
+        private void btnTextBox_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Length > 0)
+            {
+                if (this.MdiChildren[0].Name != "TextBox")
+                {
+                    DialogResult rs = MessageBox.Show("Desea cerrar el formulario abierto?", "Atención!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (rs == DialogResult.Yes)
+                    {
+                        this.MdiChildren[0].Close();
+                        TextBox f = new TextBox();
+                        f.MdiParent = this;
+                        f.Dock = DockStyle.Fill;
+                        f.Show();
+                    }
+                }
+            }
+            else
+            {
+                TextBox f = new TextBox();
                 f.MdiParent = this;
                 f.Dock = DockStyle.Fill;
                 f.Show();
