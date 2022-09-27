@@ -83,6 +83,7 @@
             this.cbDD.Name = "cbDD";
             this.cbDD.Size = new System.Drawing.Size(155, 23);
             this.cbDD.TabIndex = 3;
+            this.cbDD.SelectedIndexChanged += new System.EventHandler(this.cbDD_SelectedIndexChanged);
             // 
             // cbDDL
             // 
@@ -94,6 +95,7 @@
             this.cbDDL.Name = "cbDDL";
             this.cbDDL.Size = new System.Drawing.Size(169, 23);
             this.cbDDL.TabIndex = 4;
+            this.cbDDL.SelectedIndexChanged += new System.EventHandler(this.cbDDL_SelectedIndexChanged);
             // 
             // cbS
             // 
@@ -108,6 +110,7 @@
             this.cbS.Name = "cbS";
             this.cbS.Size = new System.Drawing.Size(121, 150);
             this.cbS.TabIndex = 5;
+            this.cbS.SelectedIndexChanged += new System.EventHandler(this.cbS_SelectedIndexChanged);
             // 
             // label4
             // 

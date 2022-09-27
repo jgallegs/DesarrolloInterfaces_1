@@ -24,5 +24,20 @@ namespace DesarrolloInterfacesFormularios
                 cbDDL.Items.Add(txtColor.Text);
             }
         }
+
+        private void cbDD_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtUltimoColor.Text = cbDD.Text;
+        }
+
+        private void cbDDL_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtUltimoColor.Text = cbDDL.Text;
+        }
+
+        private void cbS_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtUltimoColor.Text = cbS.Text;
+        }
     }
 }
